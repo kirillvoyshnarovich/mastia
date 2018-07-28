@@ -1,0 +1,32 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" )
+        //- link(href="styles/animate-css.css" rel="stylesheet")
+        link(href="styles/main.css" rel="stylesheet")
+        title="Contact"
+    body
+        include header
+        include current-page
+        section.contact-section
+            .conteiner
+                .contact-wrapper
+                    .heading-block
+                        p(class="heading-block__text") Recent Projects
+                        span(class="heading-block__border")
+                    form(class="contact__form")
+                        .contact__form-information
+                            input(class="contact__form-input contact__form-first-name" type="text" name="first name" id="contact__form-first-name-id" placeholder="First Name")
+                            input(class="contact__form-input contact__form-Last-name" type="text" name="last name" id="contact__form-last-name-id" placeholder="Last Name")
+                            input(class="contact__form-input contact__form-Email" type="email" name="email" id="contact__form-Email-id" placeholder="Your E-mail")
+                            input(class="contact__form-input contact__form-Website" type="text" name="website" id="contact__form-website-id" placeholder="Website")
+                        .contact__form-message
+                            textarea(class="contact__form-message-textarea" name="message" placeholder="Your Message" id="contact__form-message-textarea-id")
+                        .contact__form-button
+                            input(class="contact__form-button-input" type="submit" id="contact__form-button-input" name="submit" value="SEND")
+            .contact-page__map
+                <iframe class="contact-page__map-inframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4844374.672321148!2d23.490557913033236!3d53.63953068700143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46da2584e2ad4881%3A0xa1d181ec8c10!2z0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sby!4v1532288505011" width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>       
+        include get-in-touch
+        include footer
+        script(src="js/menu.js")

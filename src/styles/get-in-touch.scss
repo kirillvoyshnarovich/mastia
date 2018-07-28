@@ -1,0 +1,54 @@
+/*GET IN TOUCH BLOCK*/
+
+.get-in-touch {
+    background-color:#26a1e4;
+    font-family: Play-Regular;
+    color:#ffffff;
+    
+    .conteiner {
+        display:flex;
+        justify-content:space-between;
+        padding: 35px 5px 35px 35px;
+        box-sizing: border-box;
+
+
+        .get-in-touch__text {
+            line-height: 3.5;
+            font-size:2.1rem;
+        }
+
+        .get-in-touch__button {
+            padding:0px;
+            margin:auto 0;
+            line-height:1;
+            font-family: Play-Regular;
+            font-size:1.4rem;
+            background:none;
+            border: solid 2px #ffffff;
+            padding: 20px 40px 18px 40px;
+            color:#ffffff;
+            position:relative;
+            box-shadow: 0px 2px 0px rgb(255, 255, 255);
+            height:60px;
+            border-radius:0px 0px 4px 4px;
+        }
+
+        .get-in-touch__button:active {
+            bottom:-1px;
+            background:none;
+            border: solid 2px #ffffff;
+            padding: 20px 40px 18px 40px;
+            color:#ffffff;
+            box-shadow: 0px 0px 0px rgb(255, 255, 255);
+        }
+    }
+}
+
+//----------------------------------adaptive
+
+@media(max-width:700px) {
+    .get-in-touch {
+        display:none;
+    }
+}
+

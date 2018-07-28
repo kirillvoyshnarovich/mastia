@@ -1,0 +1,57 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" )
+        //- link(href="styles/animate-css.css" rel="stylesheet")
+        link(href="styles/main.css" rel="stylesheet")
+        title="Project Page"
+    body
+        include header
+        include current-page
+        sectioon.recent-projects-gallery
+            .conteiner
+                .heading-block
+                    p(class="heading-block__text") Recent Projects
+                    span(class="heading-block__border")
+                .filters
+                    ul(class="filters__list")
+                        li(class="filters__list-item" data-filter="all")
+                            |All
+                        span(class="filters__list-item-delimiter") /
+                        li(class="filters__list-item" data-filter="web") 
+                            |Web
+                        span(class="filters__list-item-delimiter") /
+                        li(class="filters__list-item" data-filter="html") 
+                            |HTML
+                        span(class="filters__list-item-delimiter") /
+                        li(class="filters__list-item" data-filter="wordpress")
+                            |Wordpress
+                        span(class="filters__list-item-delimiter") /
+                        li(class="filters__list-item" data-filter="ui") 
+                            |UI
+                        span(class="filters__list-item-delimiter") /
+                .gallery
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-1.png" alt="picture in gallery")
+                        .project-block__description
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-2.png" alt="picture in gallery")
+                        .project-block__description
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-3.png" alt="picture in gallery")
+                        .project-block__description
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-4.png" alt="picture in gallery")
+                        .project-block__description
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-5.png" alt="picture in gallery")
+                        .project-block__description
+                    .project-block
+                        img(class="project-block__image" src="image/project-page/pic-for-gallery-6.png" alt="picture in gallery")
+                        .project-block__description
+        include get-in-touch
+        include footer
+        script(src="js/filter.js")
+        script(src="js/menu.js")
+        

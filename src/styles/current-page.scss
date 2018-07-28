@@ -1,0 +1,36 @@
+/*CURRENT PAGE*/
+.current-page {
+    background-color:#22a7f0;
+    color:#ffffff;
+    padding: 25px 0px 25px 0px;
+    .conteiner {
+        display:flex;
+        justify-content:space-between;
+
+        .current-page__name {
+            font-family: Play-Regular;
+            font-size:2.3rem;
+            text-decoration:none;
+
+        }
+    
+        .current-page__way {
+            font-family: OpenSans-Regular;
+            font-size:1.3rem;
+            display:flex;
+            margin:auto 0;
+
+
+        }
+    }
+
+}
+
+//----------------------------------adaptive
+
+@media(max-width: 800px) {
+    .current-page {
+        padding: 65px 0px 15px 0px;
+    
+    }
+}

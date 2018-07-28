@@ -1,0 +1,831 @@
+//---------------------------------About-Us----------------------------------//
+
+//COMMON-BLOCK
+
+.heding-description {
+    color:#22a7f0;
+    font-family: Play-Regular;
+    font-size:2.5rem;
+    text-transform:uppercase;
+    line-height:0.7;
+}
+
+.descroption-paragraph {
+    margin:0px;
+    margin-top:40px;
+}
+
+//WHO-WE-ARE-BLOCK
+
+.about-us-main {
+    padding:80px 0px 80px 0px;
+}
+
+.who-we-are {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:80px;
+
+    .who-we-are__picture {
+        flex:1;
+        .who-we-are__picture-image {
+            max-width:100%;
+            height:auto;
+        }
+    }
+
+    .who-we-are__descroption {
+        color:#4b4b4b;
+        font-family: OpenSans-Regular;
+        font-size:1.3rem;
+        padding-left:30px;
+        display:flex;
+        flex-direction:column;
+        height:inherit;
+        position: relative;
+        flex:1;
+        
+        .who-we-are__button {
+
+            width:25%;
+            border:none;
+            background:#22a7f0;
+            padding:18px 15px;
+            color:#ffffff;
+            font-family: OpenSans-Regular;
+            font-size:1.3rem;
+            text-transform:uppercase;
+            position: absolute;
+            bottom: 0%;
+            bottom:2px;
+            left:30px;
+            &:active {
+                left:31px;
+            }
+        }
+    }
+}
+
+//ADVANTAGE-BLOCK
+
+.wrapper-advantage {
+    background:#323232;
+    padding:80px 0px 80px 0px;
+}
+
+.advantage {
+    display:flex;
+    justify-content: space-between;
+}
+
+.advantage__item {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width:30%;
+      
+    .advantage__item--logo {
+
+        .advantage__item--logo--image {
+            width:40%;
+            height:auto;
+            margin:0 auto;
+            display:block;
+        }
+    }
+
+    .advantage__item--text {
+
+        
+        .advantage__item-text--heading {
+            font-family: Play-Regular;
+            color:#ffffff;
+            font-size:1.9rem;
+            text-transform:uppercase;
+            text-align:center;
+            line-height: 1;
+            margin:25px 0px 25px 0px;
+        }
+
+        .advantage__item-text--description {
+            font-family: OpenSans-Regular;
+            font-size:1.3rem;
+            color:#ffffff;
+            text-align: center;
+        }
+    }
+}
+
+//SPECIALIZATION
+
+.wrapper-specialization {
+    padding:80px 0px 75px 0px
+}
+
+.specialization {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.choose-us {
+    flex:1;
+}
+
+.what-do {
+    color:#4b4b4b;
+    font-family: OpenSans-Regular;
+    font-size:1.3rem;
+    padding-left:30px;
+    display:flex;
+    flex-direction:column;
+    height:inherit;
+    position: relative;
+    flex:1;
+}
+
+.additional-Information {
+    width:100%;
+    margin-top:12px;
+
+    .additional-Information__text {
+        font-family: OpenSans-Regular;
+        font-size:1.3rem;
+        color:#353535;
+    }
+
+    .additional-Information__label-border {
+        display:block;
+        padding:12px 0px 20px 0px;
+        height:55px;
+        box-sizing:border-box;
+        border:1px solid #ebebeb;
+        line-height:0.9;
+        width:100%;
+        font-family: OpenSans-Regular;
+        font-size:1.5rem;
+        color:#353535;
+        
+        &:before {
+            content:">";
+            display: inline-block;
+            border:1px solid #ebebeb;
+            width:60px;
+            height:55px;
+            box-sizing: inherit;
+            position: relative;
+            top:-13px;
+            left:-1px;
+            padding: 16px 20px 12px 24px;
+            font-size:2.5rem;
+            color:#22a7f0;
+            font-weight:900;
+            
+        }
+    }
+
+    .additional-Information__label-text {
+        position:relative;
+        top: -15px;
+        left: 20px;
+    }
+}
+
+.additional-Information:nth-child(2) {
+    margin-top:40px;
+}
+
+.additional-Information__text {
+    display:none;
+    border:1px solid #ebebeb;
+    box-sizing:border-box;
+    border-top:none;
+    margin:0px;
+    padding:15px 10px 15px 10px;
+}
+
+.additional-Information__input {
+    display:none;
+}
+
+//ACTIONS-FOR-SPECIALIZATION-BLOCK
+.additional-Information__input:checked ~ .additional-Information__text {
+    display:block;
+}
+
+.additional-Information__input:checked ~ .additional-Information__label-border {
+    
+    color:#ffffff;
+    background:#353535;
+    border:1px solid #353535;
+
+    &:before {
+        content:">";
+        display: inline-block;
+        border:1px solid #ebebeb;
+        width:55px;
+        height:60px;
+        background:#22a7f0;
+        color:#ffffff;
+        transform: rotate(90deg);
+        padding: 17px 10px 10px 20px;
+        top:-16px;
+        border:none;
+        left:1px;
+    }
+}
+
+
+//REVIEWS
+
+.wrapper-reviews {
+    background:#323232;
+    padding:80px 0px;
+}
+
+.reviews-slider {
+    width:300%;
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    transition: left 1000ms linear;
+    left:-000%;
+}
+
+.slide {
+    display:flex;
+
+    .reviews__photo {
+        display:block;
+        align-self:flex-end;
+        border-right:1px solid #ffffff;
+        padding-right:60px;
+        // margin-right:40px;
+        margin-left:50px;
+
+        .reviews__photo-image {
+            border-radius:50%;
+            max-width:100%;
+            height:auto;
+        }
+    }
+
+    .reviews__description {
+        width:71.578%;
+        color:#ffffff;
+
+        .reviews__description-heading {
+            font-family: Play-Regular;
+            font-size:2.4rem;
+            text-transform:uppercase;
+            margin-left:40px;
+
+        }
+
+        .reviews__description-text {
+            font-family: OpenSans-Regular;
+            font-size:1.3rem;
+
+        }
+
+        .reviews__description-name {
+            @extend .reviews__description-text;
+        }
+
+        .reviews__description-profession {
+            @extend .reviews__description-text;
+        }
+    }
+}
+
+.reviews__description-wrapper {
+    padding-left:40px;
+    border-left:1px solid #ffffff;
+    position: relative;
+    left:-1px;
+}
+
+.nav-slider {
+    width:50px;
+    display:flex;
+    justify-content:space-between;
+    margin:0 auto;
+    margin-top:20px;
+
+    .nav-slider__link {
+        width:11px;
+        height:11px;
+        border-radius:50%;
+        background:#ffffff;
+        
+    }
+
+    .current-link {
+        background:#22a7f0;
+    }
+}
+
+.reviews {
+    overflow:hidden;
+}
+
+
+//OUR-TEAM-BLOCK
+.wrapper-our-team {
+    padding-top:80px;
+}
+
+.our-team__album {
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.our-team__album--photo {
+    max-width:24%;
+
+    .our-team__album--photo--picture {
+
+        .our-team__album--photo--picture--image {
+            max-width:100%;
+            height:auto;
+        }
+    }
+
+    .our-team__album--photo--caption {
+        color:#4b4b4b;
+        font-family: OpenSans-Regular;
+        text-align:center;
+
+        .our-team__album--photo--caption--name {
+            font-size:2rem;
+            margin-top:10px;
+        }
+
+        .our-team__album--photo--caption--position {
+            font-size:1.3rem;
+        }
+    }
+}
+
+
+//----------------------------------adaptive
+
+@media(max-width: 1050px) {
+
+    .descroption-paragraph {
+        margin:0px;
+        margin-top:20px;
+    }
+//SPECIALIZATION
+    .what-do {
+        .descroption-paragraph:nth-child(2) {
+            margin-top:40px;
+        }
+    }
+
+}
+
+@media(max-width: 957px) {
+
+    .descroption-paragraph {
+        margin:0px;
+        margin-top:20px;
+    }
+
+    .who-we-are {
+
+        .who-we-are__descroption {
+            font-size:1.2rem;
+            
+            .who-we-are__button {
+                padding:0px 0px;
+                height:50px;
+                bottom:4px;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+
+//WHO-WE-ARE-BLOCK
+
+    .about-us-main {
+        padding:60px 0px 60px 0px;
+    }
+
+    .who-we-are {
+        display:block;
+        margin-bottom:60px;
+
+        .who-we-are__picture {
+            display:block;
+            max-width:100%;
+            margin:0 auto;
+            .who-we-are__picture-image {
+                max-width:100%;
+                height:auto;
+            }
+        }
+
+        .who-we-are__descroption {
+            margin-top:30px;
+            padding-left:0px;
+            .who-we-are__button {
+                margin-top:20px;
+                width:25%;
+                position: relative;
+                bottom: 0%;
+                bottom:2px;
+                left:0px;
+                &:active {
+                    left:1px;
+                }
+            }
+        }
+    }
+
+    //SPECIALIZATION
+ 
+    .choose-us {
+        flex:none;
+        width:100%;
+    }
+
+    .what-do {
+        box-sizing:border-box;
+        width:100%;
+        padding-left:0px;
+    }
+
+    .specialization {
+        flex-wrap:wrap;
+
+    }
+
+    .additional-Information:nth-child(5) {
+        margin-bottom:40px;
+    }
+}
+
+@media(max-width: 846px) {
+    //REVIEWS-BLOCK
+    .slide {  
+        .reviews__photo {
+            position:relative;
+            top:-20px;
+
+        }
+    }
+}
+
+
+@media(max-width: 810px) {
+
+    .who-we-are {
+  
+        .who-we-are__descroption {
+
+            width:80%;
+        }
+    }
+
+    .advantage__item {
+
+          
+        .advantage__item--logo {
+    
+            .advantage__item--logo--image {
+                width:50%;
+ 
+            }
+        }
+    
+        .advantage__item--text {
+    
+            
+            .advantage__item-text--heading {
+                font-size:1.6rem;
+                margin:15px 0px 15px 0px;
+            }
+    
+            .advantage__item-text--description {
+
+                font-size:1.2rem;
+
+            }
+        }
+    }
+    //REVIEWS-BLOCK
+    .slide {  
+        .reviews__photo {
+            align-self:center;
+            top:30px;
+            padding-right:30px;
+            margin-left:30px;
+        }
+    }
+
+    .wrapper-reviews {
+        padding:40px 0px;
+    }
+    //OUR-TEAM-BLOCK
+    .our-team__album--photo {
+        .our-team__album--photo--caption {
+                .our-team__album--photo--caption--name {
+                font-size:1.8rem;
+            }
+        }
+    }
+      
+}
+
+@media(max-width: 700px) {
+    //SPECIALIZATION
+    .additional-Information {
+
+        .additional-Information__label-border {
+            padding:12px 0px 20px 0px;//
+            height:45px;//
+
+            &:before {
+                width:45px;//
+                height:45px;//
+                top:-13px;
+                left:-1px;
+                padding: 12px 10px 12px 16px; 
+            }
+        }
+    
+        .additional-Information__label-text {
+            position:relative;
+            top: -18px;
+            left: 20px;
+        }
+    }
+
+    .additional-Information__input:checked ~ .additional-Information__label-border {
+    
+        color:#ffffff;
+        background:#353535;
+        border:1px solid #353535;
+    
+        &:before {
+            content:">";
+            display: inline-block;
+            border:1px solid #ebebeb;
+            width:45px;
+            height:45px;
+            background:#22a7f0;
+            color:#ffffff;
+            transform: rotate(90deg);
+            padding: 10px 10px 10px 15px;//
+            top:-13px;//
+            border:none;
+            left:-1px;//
+        }
+
+        .additional-Information__label-text {
+            top:-15px;
+        }
+    }
+
+    //ADVANTAGE-BLOCK
+
+    .wrapper-advantage {
+        padding:40px 0px 40px 0px;
+    }
+
+    .advantage__item {
+        .advantage__item--text {
+            .advantage__item-text--heading {
+                font-size:1.8rem;
+                margin:25px 0px 15px 0px;
+            }
+
+            .advantage__item-text--description {
+                font-size:1.2rem;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 650px) {
+    //OUR-TEAM-BLOCK
+    .wrapper-our-team {
+        padding-top:60px;
+    }
+
+    .our-team__album {
+        padding:0px 30px 0px 30px;
+        margin-top:30px;
+        flex-wrap:wrap;
+    }
+
+    .our-team__album--photo {
+        max-width:45%;
+        .our-team__album--photo--caption {
+            .our-team__album--photo--caption--name {
+                font-size:1.8rem;
+                margin-top:10px;
+            }
+        }
+    }
+
+    .our-team__album--photo:nth-child(3) {
+        margin-top:30px;
+    }
+
+    .our-team__album--photo:nth-child(4) {
+        margin-top:30px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    //REVIEWS-BLOCK
+    .slide {
+        .reviews__photo {
+            padding-right:20px;
+            margin-left:10px;
+            top:9px;
+        }
+
+        .reviews__description {
+            width:100%;
+
+            .reviews__description-heading {
+                margin-left:20px;
+                font-size:2rem;
+            }
+            .reviews__description-text {
+                font-size:1.2rem;
+            }
+        }
+    
+    }
+
+    .reviews__description-wrapper {
+        padding-left:20px;
+        border-left:none;
+
+    }
+
+    .wrapper-reviews {
+        padding:30px 0px;
+    }
+    //ADVANTAGE-BLOCK
+
+    .advantage {
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+
+    .advantage__item {
+        width:70%;//
+        margin-top: 50px;
+
+        .advantage__item--logo .advantage__item--logo--image {
+            width:40%;
+        }
+
+        .advantage__item--text {
+            width:70%;//
+            margin:0 auto;
+            
+            .advantage__item-text--heading {
+                margin:15px 0px 15px 0px;
+            }
+        }
+    }
+
+    .advantage__item:nth-child(1) {
+        margin-top:0px;
+    }
+
+    //WHO-WE-ARE-BLOCK
+
+    .about-us-main {
+        padding:60px 0px 50px 0px;
+    }
+
+    .who-we-are {
+        display:block;
+        margin-bottom:60px;
+
+        .who-we-are__picture {
+            display:block;
+            max-width:100%;
+            margin:0 auto;
+            .who-we-are__picture-image {
+                max-width:100%;
+                height:auto;
+            }
+        }
+
+        .who-we-are__descroption {
+            margin-top:30px;
+            padding-left:0px;
+            .who-we-are__button {
+                margin-top:20px;
+                width:30%;
+                padding:8px 8px 8px 8px;
+                box-sizing:border-box;
+            }
+        }
+    }
+
+}
+
+
+
+@media(max-width: 500px) {
+    //REVIEWS-BLOCK
+    .slide {
+        .reviews__photo {
+            display:none;
+        }
+    
+        .reviews__description {
+            width:100%;
+        }
+    }
+
+}
+
+
+@media(max-width: 350px) {
+    //REVIEWS-BLOCK
+    .slide {
+        .reviews__photo {
+            display:none;
+        }
+
+    }
+}
+
+@media(max-width: 455px) {
+
+    //WHO-WE-ARE-BLOCK
+
+    .about-us-main {
+        padding:60px 0px 50px 0px;
+    }
+
+    .who-we-are {
+        .who-we-are__descroption {
+
+            .who-we-are__button {
+                width:45%;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 450px) {
+    //OUR-TEAM-BLOCK
+    .wrapper-our-team {
+        padding-top:40px;
+    }
+
+    .our-team__album {
+        padding:0px 20px 0px 20px;
+    }
+
+    .our-team__album--photo {
+        .our-team__album--photo--caption {
+            .our-team__album--photo--caption--name {
+                font-size:1.4rem;
+            }
+
+            .our-team__album--photo--caption--position {
+                font-size:1.25rem;
+            }
+        }
+    }
+
+    //ABOUT-US-MAIN-BLOCK
+    .about-us-main {
+        padding:40px 0px 40px 0px;
+    }
+
+    //ADVANTAGE-BLOCK
+
+    .advantage__item {
+        width:80%;//
+
+        .advantage__item--logo .advantage__item--logo--image {
+            width:50%;
+        }
+
+        .advantage__item--text {
+            width:80%;
+        }
+    }
+
+}

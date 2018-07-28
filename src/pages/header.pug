@@ -1,0 +1,55 @@
+header.header
+    .contact
+        .conteiner
+            .contact__social-media
+                .facebook
+                    a(class="link-svg" href="https://www.facebook.com/")
+                        include ../image/facebook-icon-for-header-block.svg
+                .twitter
+                    a(class="link-svg" href="https://twitter.com/")
+                        include ../image/twitter -icon-for-header-block.svg
+                .linkedin
+                    a(class="link-svg" href="https://www.linkedin.com/")
+                        include ../image/linkedin-icon-for-header-block.svg
+                .google
+                    a(class="link-svg" href="https://plus.google.com/discover/")
+                        include ../image/google-icon-for-header-block.svg
+            .contact__contact-information
+                .working-hours
+                    include ../image/clock-icon-for-header-block.svg
+                    | Sat: 7:00 - 17:00
+                .number-phone
+                    a(class="link number-phone-icon" href="tel:+386 40 111 5555")
+                        include ../image/call-icon-for-header-block.svg
+                    a(class="link number-phone-link" href="tel:+386 40 111 5555") +386 40 111 5555
+                .mail
+                    a(class="link mail-icon" href="mailto:info@yourdomain.com")
+                        include ../image/mail-icon-for-header-block.svg
+                    a(class="link mail-link" href="mailto:info@yourdomain.com") info@yourdomain.com
+
+    
+.header__menu
+        .header__menu-logo 
+            img(class="header__menu-logo-image" src="image/logo-for-header-block.png" alt="picture in logo site")
+        input(type="checkbox" class="menu-button-input" id="menu-button-input-id")
+        label(for="menu-button-input-id" class="menu-button-label")
+            include ../image/menu-button.svg
+        nav.header__menu-navigation
+            .navigation__head
+                p(class="navigation__head__number-phone") +386 40 111 5555
+                p(class="navigation__head__mail") info@yourdomain.com
+                p(class="navigation__head__working-hours") Sat: 7:00 - 17:00
+                label(for="menu-button-input-id" class="menu-buttom-close") ✖
+            ul.header__menu-navigation-listen
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="index.html") Home
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="about-us.html") About Us
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="full-news-page.html") Pages
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="project-page.html") Projects
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="news.html") Blog
+                li.header__menu-navigation-listen-item
+                    a(class="header__menu-navigation-listen-link" href="contact.html") Contact us

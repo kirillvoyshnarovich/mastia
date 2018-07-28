@@ -1,0 +1,156 @@
+//-------------------------------CONTACT-PAGE------------------------------//
+
+.contact-wrapper {
+    padding-bottom:80px;
+}
+
+.contact__form {
+    margin-top:50px;
+
+}
+
+.contact__form-information {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+   .contact__form-input {
+       width:49%;
+    //    margin-left:35px;
+       border:1px solid #d7d7d7;
+       height:45px;
+       box-sizing:border-box;
+       font-family: OpenSans-Regular;
+       font-size:1.4rem;
+       color:#838383;
+       padding-left:10px;
+   }
+}
+
+.contact__form-input:nth-child(3) {
+    margin-top:25px;
+}
+
+.contact__form-input:nth-child(4) {
+    margin-top:25px;
+}
+
+
+.contact__form-message {
+    width:100%;
+
+    .contact__form-message-textarea {
+        padding:10px;
+        border:1px solid #d7d7d7;
+        font-family: OpenSans-Regular;
+        font-size:1.4rem;
+        width:100%;
+        margin-left:0px;
+        height:170px;
+        min-height:170px;
+        min-width:100%;
+        color:#838383;
+        margin-top:30px;
+        box-sizing:border-box;
+    }
+
+}
+
+.contact__form-button {
+    width:100%;
+    margin-top:30px;
+
+    .contact__form-button-input {
+        border:none;
+        font-family: OpenSans-Bold;
+        font-size:1.4rem;
+        text-transform:uppercase;
+        color:#ffffff;
+        padding:10px 30px 10px 30px;
+        background:#26a1e4;
+
+        &:active {
+            position:relative;
+            left:1px;
+        }
+    }
+}
+
+.contact-page__map {
+
+    position: relative;
+    bottom:-4px;
+    height:600px;
+    
+    .contact-page__map-inframe {
+        height:inherit;
+    }
+}
+
+
+//----------------------------------adaptive
+
+
+@media(max-width: 1180px) {
+    .conteiner {
+        max-width: 95vw;
+        margin:0 auto;
+    }
+
+}
+
+@media(max-width: 700px) {
+
+    .contact-page__map {
+        height:500px;
+
+        .contact-page__map-inframe {
+            height:100%;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .contact-page__map {
+        height:400px;
+
+    }
+}
+
+@media(max-width: 500px) {
+
+    .contact-page__map {
+        max-height:300px;
+
+    }
+
+    .contact__form-information {
+
+    
+       .contact__form-input {
+           width:100%;
+
+       }
+    }
+
+    .contact__form-input:nth-child(n) {
+        margin-top:15px;
+    }
+
+    .contact__form-input:nth-child(1) {
+        margin-top:0px;
+    }
+    
+
+}
+
+
+@media(max-width: 400px) {
+
+    .contact-page__map {
+        max-height:250px;
+
+    }
+}
+

@@ -1,0 +1,211 @@
+/*FOOTER BLOCK*/
+    .footer {
+        background-color:#161616;
+        padding:60px 0px 85px 0px;
+
+        .footer__wrapper {
+            display:flex;
+            justify-content:space-between;
+
+            .about-us {
+                width:23.070175438596491228070175438596%;
+
+            }
+        
+            .related-links {
+                width:14.912280701754385964912280701754%;
+            }
+        
+            .news-media {
+                width:16.666666666666666666666666666667%;
+            }
+        
+            .contacts {
+                width:22.982456140350877192982456140351%;
+                fill:#26a1e4;
+                font-family: OpenSans-Regular;
+                font-size:1.25rem;
+                color:#ffffff;
+                line-height: 1.6;
+
+                .location-footer svg {
+                width:13px;
+                height:18px;
+                padding-top:20px;
+                position: relative;
+                top:4px;
+                }
+
+                .number-phone-footer svg{
+                    width:13px;
+                    height:15px;
+                    position: relative;
+                    top:2px;
+                }
+
+                .mail-footer svg{
+                    width:13px;
+                    height:15px;
+                    position: relative;
+                    top:2px;
+                }
+
+                .number-phone-footer {
+
+                    .number-phone-footer-link {
+
+                        color:#ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+.footer .footer__wrapper .contacts .caption-in-block-footer {
+    line-height:1;
+}
+
+/*RIGHTS BLOCK*/
+
+.rights {
+    background-color:#000000;
+    font-family: OpenSans-Regular;
+    font-size:1.3rem;
+    text-align:center;
+    color:#ffffff;
+    padding:38px 0px 38px 0px;
+
+    .rights-icon {
+        font-size:1.8rem;
+        position:relative;
+        top:1px;
+    }
+}
+
+//----------------------------------adaptive
+
+@media(max-width: 1125px) {
+
+    .footer .footer__wrapper {
+
+        .about-us {
+            width:25.070%;
+        }
+
+        .related-links {
+            width:24.912%;
+        }
+
+        .news-media {
+            width:24.667%;
+        }
+
+        .contacts {
+            width:23.982%;
+        }
+    }
+
+}
+
+@media(max-width: 900px) {
+
+    .footer .footer__wrapper {
+
+        .about-us {
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media(max-width: 785px) {
+
+    .footer .footer__wrapper {
+
+        .about-us {
+            display:none;
+        }
+
+        .related-links {
+            width:30.1%;
+        }
+
+        .news-media {
+            width:33.2%;
+        }
+
+        .contacts {
+            width:33.3%;
+        }
+    }
+}
+
+@media(max-width: 563px) {
+
+    .footer .footer__wrapper {
+        flex-wrap:wrap;
+
+        .related-links {
+            width:50%;
+            padding-left:30px;
+            box-sizing:border-box;
+        }
+
+        .news-media {
+            width:50%;
+            padding-left:30px;
+            box-sizing:border-box;
+        }
+
+        .contacts {
+            width:100%;
+            margin-top:20px;
+            padding-left:30px;  
+        }
+    }
+
+    .caption-in-block-footer {
+        margin-bottom:10px;
+    }
+}
+
+@media(max-width: 450px) {
+    .footer .footer__wrapper {
+
+        .related-links {
+            padding-left:10px;
+        }
+
+        .news-media {
+            padding-left:10px;
+        }
+
+        .contacts {
+            padding-left:10px;  
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    
+    .footer .footer__wrapper {
+
+        .related-links {
+            width:90%;
+            padding-left:40px;
+        }
+
+        .news-media {
+            width:90%;
+            padding-left:40px;
+        }
+
+        .contacts {
+            width:100%;
+            margin-top:20px;
+            padding-left:40px;
+            
+        }
+
+    }
+}

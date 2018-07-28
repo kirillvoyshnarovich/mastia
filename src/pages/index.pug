@@ -1,0 +1,244 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" )
+        //- link(href="styles/animate-css.css" rel="stylesheet")
+        link(href="styles/main.css" rel="stylesheet")
+        title="Home"
+    body 
+        include header
+        section.main
+            .slider
+                .slider-wrapper
+                    .slider-wrapper__slide
+                        img(class="slider-wrapper__slide-image" src="image/picture-for-main-slaider/picture-1.png")
+                        .slider-wrapper__slide-description
+                            .slider-wrapper__slide-description-caption We care about your business
+                            .slider-wrapper__slide-description-text
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum consectetur
+                                |egestas. Nulla nisi nisi, rutrum vitae nunc non, bibendum euismod nulla
+                            button.slider-wrapper__slide-description-button About Us
+                    .slider-wrapper__slide
+                        img(class="slider-wrapper__slide-image" src="image/picture-for-main-slaider/picture-2.png")
+                        .slider-wrapper__slide-description
+                                .slider-wrapper__slide-description-caption We care about your business
+                                .slider-wrapper__slide-description-text
+                                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum consectetur
+                                    |egestas. Nulla nisi nisi, rutrum vitae nunc non, bibendum euismod nulla
+                                button.slider-wrapper__slide-description-button About Us
+                    .slider-wrapper__slide
+                        img(class="slider-wrapper__slide-image" src="image/picture-for-main-slaider/picture-3.png")
+                        .slider-wrapper__slide-description
+                                .slider-wrapper__slide-description-caption We care about your business
+                                .slider-wrapper__slide-description-text
+                                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum consectetur
+                                    |egestas. Nulla nisi nisi, rutrum vitae nunc non, bibendum euismod nulla
+                                button.slider-wrapper__slide-description-button About Us
+                .slider-control
+                    .button.slider-control__left-arrow
+                        include ../image/picture-for-main-slaider/arrow-for-main-slaider-left.svg
+                    .button.slider-control__right-arrow
+                        include ../image/picture-for-main-slaider/arrow-for-main-slaider-right.svg
+            .services
+                .conteiner
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-1.png")
+                        .services-item__heading Nibh Ridiculus
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-2.png")
+                        .services-item__heading Grammatica Del
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-3.png")
+                        .services-item__heading Europan Lingues
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-4.png")
+                        .services-item__heading Ipsum Quia
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-5.png")
+                        .services-item__heading Aliquam Quaerat
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+                    .services-item
+                        .services-item__icon
+                            img(class="services-irem__icon-image" src="image/icon-for-services-block-6.png")
+                        .services-item__heading Dolorem Eum
+                        .services-item__description.
+                            Donec ullamcorper nulla non metus auctor fringilla. Cum sociis
+                            natoque penatibus etmagnis dis parturie nt montes, nascetur.
+            
+            .recent-projects
+                .conteiner
+                    .heading-block
+                        .heading-block__text Recent Projects
+                        .heading-block__border
+                    .recent-projects__slaider
+                        .examples-of-projects.slider-wrapper
+                            .project.slider-wrapper__slide
+                                img(class="project_image-img" src="image/picture-for-recent-projects-slider/picture-for-recent-projects__slaider-1.png" alt="picture in slaider" )
+                                .zoom
+                                    include ../image/zoom-for-recent-projects-slaider-block.svg
+                                .description View website 
+                                    a(class="link project-description-link" href="") www.hook.com
+                                    
+                            .project.slider-wrapper__slide
+                                img(class="project_image-img" src="image/picture-for-recent-projects-slider/picture-for-recent-projects__slaider-2.png" alt="picture in slaider" )
+                                .zoom
+                                    include ../image/zoom-for-recent-projects-slaider-block.svg
+                                .description View website 
+                                    a(class="link project-description-link" href="") www.takee.com
+                                    
+                            .project.slider-wrapper__slide
+                                img(class="project_image-img" src="image/picture-for-recent-projects-slider/picture-for-recent-projects__slaider-3.png" alt="picture in slaider" )
+                                .zoom
+                                    include ../image/zoom-for-recent-projects-slaider-block.svg
+                                .description View website 
+                                    a(class="link project-description-link" href="") www.Caak.com
+                                    
+                            .project.slider-wrapper__slide
+                                img(class="project_image-img" src="image/picture-for-recent-projects-slider/picture-for-recent-projects__slaider-4.png" alt="picture in slaider" )
+                                .zoom
+                                    include ../image/zoom-for-recent-projects-slaider-block.svg
+                                .description View website 
+                                    a(class="link project-description-link" href="") www.Essa.com
+                                    
+                            .project.slider-wrapper__slide
+                                img(class="project_image-img" src="image/picture-for-recent-projects-slider/picture-for-recent-projects__slaider-5.png" alt="picture in slaider" )
+                                .zoom
+                                    include ../image/zoom-for-recent-projects-slaider-block.svg
+                                .description View website 
+                                    a(class="link project-description-link" href="") www.Qmmes.com
+                        .control-bottom
+                            .control-bottom__slaider-left-control.button.slider-control__left-arrow
+                                include ../image/picture-for-main-slaider/arrow-for-main-slaider-left.svg
+                            .control-bottom__slaider-right-control.button.slider-control__right-arrow
+                                include ../image/picture-for-main-slaider/arrow-for-main-slaider-right.svg
+            
+            .fun-facts
+                .conteiner
+                    .fun-facts-block
+                        span.facts-block__quantity 456
+                        span.facts-block__border 
+                        span.facts-block__name-facts Happy Clients
+                    .fun-facts-block
+                        span.facts-block__quantity 56
+                        span.facts-block__border 
+                        span.facts-block__name-facts Projects
+                    .fun-facts-block
+                        span.facts-block__quantity 197
+                        span.facts-block__border 
+                        span.facts-block__name-facts Campaigns
+                    .fun-facts-block
+                        span.facts-block__quantity 342
+                        span.facts-block__border 
+                        span.facts-block__name-facts Features
+            .from-blog
+                .conteiner
+                    .heading-block
+                        .heading-block__text From Blog
+                        .heading-block__border
+                    .posts-slaider
+                        div.posts
+                            .posts__block.post-blog_show
+                                .post-blog 
+                                    .post-blog__picture
+                                        img(src="image/picture-for-from-blog-block/pic-1.png" class="post-blog__picture-image" alt="picture in a post")
+                                    .post-blog__desctiption
+                                        .post-blog__desctiption-date 23 oct 2015
+                                        .post-blog__desctiption-text.
+                                            Dummy text is text that is used in theublish
+                                            industry or by web designers to occupy the
+                                            space which will later be
+                                        a(class="link post-blog__desctiption-link" href="") Read More  
+                                .post-blog 
+                                    .post-blog__picture
+                                        img(src="image/picture-for-from-blog-block/pic-2.png" class="post-blog__picture-image" alt="picture in a post")
+                                    .post-blog__desctiption
+                                        .post-blog__desctiption-date 23 oct 2015
+                                        .post-blog__desctiption-text.
+                                            Dummy text is text that is used in theublish
+                                            industry or by web designers to occupy the
+                                            space which will later be
+                                        a(class="link post-blog__desctiption-link" href="") Read More
+                            .posts__block
+                                .post-blog
+                                    .post-blog__picture
+                                        img(src="image/picture-for-from-blog-block/pic-3.png" class="post-blog__picture-image" alt="picture in a post")
+                                    .post-blog__desctiption
+                                        .post-blog__desctiption-date 24 oct 2015
+                                        .post-blog__desctiption-text.
+                                            Dummy text is text that is used in theublish
+                                            industry or by web designers to occupy the
+                                            space which will later be
+                                        a(class="link post-blog__desctiption-link" href="") Read More
+                                .post-blog
+                                    .post-blog__picture
+                                            img(src="image/picture-for-from-blog-block/pic-4.png" class="post-blog__picture-image" alt="picture in a post")
+                                    .post-blog__desctiption
+                                        .post-blog__desctiption-date 24 oct 2015
+                                        .post-blog__desctiption-text.
+                                            Dummy text is text that is used in theublish
+                                            industry or by web designers to occupy the
+                                            space which will later be
+                                        a(class="link post-blog__desctiption-link" href="") Read More
+                        div(class="control-bottom control-bottom_padding-right-null")
+                            div(class="control-bottom__slaider-left-control button")
+                                include ../image/picture-for-main-slaider/arrow-for-main-slaider-left.svg
+                            div(class="control-bottom__slaider-right-control button")
+                                include ../image/picture-for-main-slaider/arrow-for-main-slaider-right.svg  
+            
+            include get-in-touch
+        include footer
+        //- script(src="js/anime-master/anime-master/anime.min.js")
+        script(src="js/javascript.js")
+        script(src="js/menu.js")
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+                        
+                         
+
+
+
+            
+
+
+
+
+

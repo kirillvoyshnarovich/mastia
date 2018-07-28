@@ -1,0 +1,156 @@
+doctype
+html(lang="eng-ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" )
+        //- link(href="styles/animate-css.css" rel="stylesheet")
+        link(href="styles/main.css" rel="stylesheet")
+        title="News"
+    body
+        include header
+        include current-page
+        section.posts
+            .conteiner
+                .posts__wrapper
+                    .posts__viewed-posts
+                        .item-post
+                            .item-post__picture
+                                img(class="item-post__page-image" src="image/news-page/picture-for-viewed-posts-block/pic_for_viewed_posts_block-1.png")
+                                .item-post__page-info-wrapper
+                                    .item-post__page-info
+                                        span(class="item-post__page-info-date-head") DATE
+                                        span(class="item-post__page-info-date-number") March 24, 2015
+                            .item-post-description
+                                .item-post-description-heading
+                                    |Steps Toward Developing A Content Strategy
+                                .item-post-description-main
+                                    |Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    |elit. Ab debitis ea est illum ipsa itaque liberop 
+                                    |tiovolup. Conseq untur deserunt expedita, fugiat
+                                    |hic illum porro quidem quis recusandae vero? 
+                                    |Aliquiassumenda cum delectus eaque eligendi, eum
+                                    |excepturi fugit illum impedit in iste laudantium
+                                    |modi natus, nisi nobis gfy g obcaecati praesentium
+                                    |quis reiciendis rerum sapiente&nbsp
+                                    a(class="item-post-description-main-link" href="")
+                                        |[...]
+                            a(class="item-post-read-more-link" href="") 
+                                button.item-post-read-more Read More
+
+                        div.item-post
+                            .item-post__picture
+                                img(class="item-post__page-image" src="image/news-page/picture-for-viewed-posts-block/pic_for_viewed_posts_block-2.png")
+                                .item-post__page-info-wrapper
+                                    .item-post__page-info
+                                        span(class="item-post__page-info-date-head") DATE
+                                        span(class="item-post__page-info-date-number") April 24, 2015
+                            .item-post-description 
+                                .item-post-description-heading
+                                    |Looking for Developers? Try This Geeky Community
+                                .item-post-description-main
+                                    |Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    |elit. Ab debitis ea est illum ipsa itaque liberop 
+                                    |tiovolup. Conseq untur deserunt expedita, fugiat
+                                    |hic illum porro quidem quis recusandae vero? 
+                                    |Aliquiassumenda cum delectus eaque eligendi, eum
+                                    |excepturi fugit illum impedit in iste laudantium
+                                    |modi natus, nisi nobis gfy g obcaecati praesentium
+                                    |quis reiciendis rerum sapiente&nbsp
+                                    a(class="item-post-description-main-link" href="")
+                                        |[...]
+                            a(class="item-post-read-more-link" href="")
+                                button.item-post-read-more Read More
+                        div.item-post
+                            .item-post__picture
+                                img(class="item-post__page-image" src="image/news-page/picture-for-viewed-posts-block/pic_for_viewed_posts_block-3.png")
+                                .item-post__page-info-wrapper
+                                    .item-post__page-info
+                                        span(class="item-post__page-info-date-head") DATE
+                                        span(class="item-post__page-info-date-number") May 24, 2015
+                            .item-post-description
+                                .item-post-description-heading
+                                    |How to Spend Less Than an Hour a Day on Email Marketing
+                                .item-post-description-main
+                                    |Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    |elit. Ab debitis ea est illum ipsa itaque liberop 
+                                    |tiovolup. Conseq untur deserunt expedita, fugiat
+                                    |hic illum porro quidem quis recusandae vero? 
+                                    |Aliquiassumenda cum delectus eaque eligendi, eum
+                                    |excepturi fugit illum impedit in iste laudantium
+                                    |modi natus, nisi nobis gfy g obcaecati praesentium
+                                    |quis reiciendis rerum sapiente&nbsp
+                                    a(class="item-post-description-main-link" href="")
+                                        |[...]
+                            a(class="item-post-read-more-link" href="")
+                                button.item-post-read-more Read More
+                        div.item-post-pages
+                            span(class="number-page") 1
+                            span(class="number-page") 2
+                            span(class="number-page-next") >
+                    .posts__other-posts
+                        form(class="posts__other-posts__form" id="posts__other-posts__form" action="" name="posts__other-posts__form-name")
+                            .posts__other-posts__form-search
+                                input(type="search" class="posts__other-posts__form-search-input" name="search" value="Searching" onfocus="if (this.value == 'Searching') {this.value=''}" onblur="if (this.value == '') {this.value='Searching'}")
+                                label(class="posts__other-posts__form-search-label" for="")
+                                    include ../image/news-page/search-icon-for-form.svg
+                        .recent-posts
+                            .name-posts-section Recent Posts
+                            .recent-posts__item
+                                .recent-posts__item-picture
+                                    img(class="recent-posts__item-picture-image" src="image/news-page/picture-for-recent-posts/pic_for_recent_posts_1.png" alt="picture-in-post")
+                                .recent-posts__item-description
+                                    .recent-posts__item-description-text
+                                        |There is not good blog withhout tim great
+                                        |readability is very importent
+                                    .recent-posts__item-description-heading Viral Polaroid Ugh
+                            .recent-posts__item
+                                .recent-posts__item-picture
+                                    img(class="recent-posts__item-picture-image" src="image/news-page/picture-for-recent-posts/pic_for_recent_posts_2.png" alt="picture-in-post")
+                                .recent-posts__item-description
+                                    .recent-posts__item-description-text
+                                        |6 Reasons to Attend Elevate New York 2015
+                                        |events one way oft the development
+                                    .recent-posts__item-description-heading Labitur Qui
+                            .recent-posts__item
+                                .recent-posts__item-picture
+                                    img(class="recent-posts__item-picture-image" src="image/news-page/picture-for-recent-posts/pic_for_recent_posts_3.png" alt="picture-in-post")
+                                .recent-posts__item-description
+                                    .recent-posts__item-description-text
+                                        |User Experience As A Ranking Signal Is
+                                        |Currently Only For Mobile Resalts
+                                    .recent-posts__item-description-heading Viral Polaroid Ugh
+                            .recent-posts__item
+                                .recent-posts__item-picture
+                                    img(class="recent-posts__item-picture-image" src="image/news-page/picture-for-recent-posts/pic_for_recent_posts_4.png" alt="picture-in-post")
+                                .recent-posts__item-description
+                                    .recent-posts__item-description-text
+                                        |When you start with what's at stake for
+                                        |the right to their attention
+                                    .recent-posts__item-description-heading El His Nonumes
+                        .latest-projects
+                            .name-posts-section Latest Projects
+                            .latest-projects__item
+                                img(class="latest-projects__item-image" src="image/news-page/picture-for-block-latest-projects/pic_for_latest_projects_1.png" alt="picture-in-posts")
+                            .latest-projects__item
+                                img(class="latest-projects__item-image" src="image/news-page/picture-for-block-latest-projects/pic_for_latest_projects_2.png" alt="picture-in-posts")
+                            .latest-projects__item
+                                img(class="latest-projects__item-image" src="image/news-page/picture-for-block-latest-projects/pic_for_latest_projects_3.png" alt="picture-in-posts")
+                            .latest-projects__item
+                                img(class="latest-projects__item-image" src="image/news-page/picture-for-block-latest-projects/pic_for_latest_projects_4.png" alt="picture-in-posts")
+                        .blog-categories
+                            .name-posts-section Blog Categories
+                            ul(class="blog-categories__list")
+                                li(class="blog-categories__list-item")
+                                    a(class="blog-categories__list-item-link" href="") Building
+                                li(class="blog-categories__list-item")
+                                    a(class="blog-categories__list-item-link" href="") Company
+                                li(class="blog-categories__list-item")
+                                    a(class="blog-categories__list-item-link" href="") Design
+                                li(class="blog-categories__list-item")
+                                    a(class="blog-categories__list-item-link" href="") Press
+                                li(class="blog-categories__list-item")
+                                    a(class="blog-categories__list-item-link" href="") Tips              
+        include get-in-touch
+        include footer
+        script(src="js/menu.js")
+        
